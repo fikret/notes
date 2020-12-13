@@ -2,7 +2,12 @@
 ### Export WP Database
 
     wp db export
-### Heading
+### Optimize WP database
+Use this command under /htdocs directoroy
+
+    wp db optimzie
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTgxNjIzNjJdfQ==
+eyJoaXN0b3J5IjpbMTY0MTE1MzgwOSwtMTk5ODE2MjM2Ml19
 -->
