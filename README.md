@@ -7,9 +7,8 @@ A[Square Rect] -- Link text --> B((Circle))
 A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
-
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NjAxMzYyMCwyNzgzOTkwMzQsMTIzOD
-A1OTkwMCwxMjM4MDU5OTAwXX0=
+eyJoaXN0b3J5IjpbMjc4Mzk5MDM0LDI3ODM5OTAzNCwxMjM4MD
+U5OTAwLDEyMzgwNTk5MDBdfQ==
 -->
