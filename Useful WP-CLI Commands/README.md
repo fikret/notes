@@ -7,8 +7,11 @@ Use this command under /htdocs directoroy
 
     wp db optimzie
 
-test
+### Change user password
+
+    wp user update <username> --user_pass=<magic pass> --allow-root
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5ODA0NDIyMywxNjQxMTUzODA5LC0xOT
-k4MTYyMzYyXX0=
+eyJoaXN0b3J5IjpbLTE2NTQ3NTQxMzEsMTE5ODA0NDIyMywxNj
+QxMTUzODA5LC0xOTk4MTYyMzYyXX0=
 -->
