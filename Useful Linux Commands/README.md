@@ -1,5 +1,17 @@
 ## Useful Linux commands that I always forget
 
+The numbers refer to the file descriptors (fd).
+
+-   Zero is `stdin`
+-   One is `stdout`
+-   Two is `stderr`
+
+`2>&1` redirects fd 2 to 1.
+```
+# Look for ERROR string in both stdout and stderr.
+foo 2>&1 | grep ERROR
+```
+
 ### How to sort directories (folders) by size    
     du -h --max-depth=1 | sort -hr
 
@@ -18,6 +30,6 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTM2MzQ2MzMsLTE0Mzk5MDM3MSwtNT
-MzNzQxNzA4XX0=
+eyJoaXN0b3J5IjpbMTkzMTExNTg2LC0yMDkzNjM0NjMzLC0xND
+M5OTAzNzEsLTUzMzc0MTcwOF19
 -->
