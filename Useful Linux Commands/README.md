@@ -3,7 +3,8 @@
 ### How to sort directories (folders) by size    
     du -h --max-depth=1 | sort -hr
 
-### Heading
+### Troubleshooting systems
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mzk5MDM3MSwtNTMzNzQxNzA4XX0=
+eyJoaXN0b3J5IjpbOTk2NzY5NDczLC0xNDM5OTAzNzEsLTUzMz
+c0MTcwOF19
 -->
