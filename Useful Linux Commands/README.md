@@ -1,7 +1,6 @@
+## Useful Linux commands that I always forget
 
 
-
-> Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTUzMzc0MTcwOF19
 -->
