@@ -9,9 +9,12 @@
 ### Show disks size
 
     df -H
-### Heading
+### Show processes
+
+    htop
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDU3NTA2NzEsLTE0Mzk5MDM3MSwtNT
-MzNzQxNzA4XX0=
+eyJoaXN0b3J5IjpbMTQxNDQxMjMyMCwtMTQzOTkwMzcxLC01Mz
+M3NDE3MDhdfQ==
 -->
