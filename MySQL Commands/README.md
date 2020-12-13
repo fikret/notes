@@ -5,6 +5,14 @@
 
 ### Show databases;
 
+    show databases;
+### Use a database
+
+    show tables;
+
+    
+    
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0Njg4Mzg4Nl19
+eyJoaXN0b3J5IjpbMjAyMjM0MTA2OV19
 -->
