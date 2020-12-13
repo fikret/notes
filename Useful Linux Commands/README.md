@@ -1,9 +1,9 @@
 ## Useful Linux commands that I always forget
 
-You can sort subfolders by th
-    
+### How to sort directories (folders) by size    
     du -h --max-depth=1 | sort -hr
 
+### Heading
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MjY0NDkwLC01MzM3NDE3MDhdfQ==
+eyJoaXN0b3J5IjpbLTE0Mzk5MDM3MSwtNTMzNzQxNzA4XX0=
 -->
