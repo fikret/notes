@@ -6,9 +6,12 @@
 ### Logs to troubleshoot system problems
 
     dmesg
-## Heading
+### Show disks size
+
+    df -H
+### Heading
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjYxNDg5NDYsLTE0Mzk5MDM3MSwtNT
+eyJoaXN0b3J5IjpbLTIwNDU3NTA2NzEsLTE0Mzk5MDM3MSwtNT
 MzNzQxNzA4XX0=
 -->
