@@ -7,7 +7,8 @@ Use this command under /htdocs directoroy
 
     wp db optimzie
 
-
+test
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MTE1MzgwOSwtMTk5ODE2MjM2Ml19
+eyJoaXN0b3J5IjpbMTE5ODA0NDIyMywxNjQxMTUzODA5LC0xOT
+k4MTYyMzYyXX0=
 -->
