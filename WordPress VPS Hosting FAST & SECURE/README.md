@@ -77,8 +77,9 @@ You should disable cron on wp-config.php
 
     crontab -e
 Paste:
-* */6 * * * cd /var/www/wpokulu.co/htdocs/ wp cron event run --due-now --allow-root
+      * */6 * * * cd /var/www/SITE-FOLDER/htdocs/ wp cron event run --due-now --allow-root
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NTY0NjIyNCwtODk1ODAwOTcyXX0=
+eyJoaXN0b3J5IjpbLTExNDI4MTUzMjEsLTg5NTgwMDk3Ml19
 -->
