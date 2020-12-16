@@ -73,7 +73,12 @@ On low traffic sites this is perfectly fine, but when your site visits start to 
 You should disable cron on wp-config.php 
 
     define('DISABLE_WP_CRON', 'true');
+**Setup manual cron job with wp-cli**
+
+    crontab -e
+Paste:
+* */6 * * * cd /var/www/wpokulu.co/htdocs/ wp cron event run --due-now --allow-root
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM3MTIyNzkyLC04OTU4MDA5NzJdfQ==
+eyJoaXN0b3J5IjpbLTQ4NTY0NjIyNCwtODk1ODAwOTcyXX0=
 -->
