@@ -79,9 +79,11 @@ You should disable cron on wp-config.php
 Paste:
 
   */10 * * * * cd /var/www/SITE-FOLDER/htdocs/; wp cron event run --due-now --allow-root
+if you want to log cron events seperately edit this file:
 
-
+    nano /etc/rsyslog.d/50-default.conf
+uncomment cron.* line
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNzYwMTc3NywxOTM3MzM2MzQ0LC0xMT
-QyODE1MzIxLC04OTU4MDA5NzJdfQ==
+eyJoaXN0b3J5IjpbNjA3MjEyOTE2LDE0MTc2MDE3NzcsMTkzNz
+MzNjM0NCwtMTE0MjgxNTMyMSwtODk1ODAwOTcyXX0=
 -->
