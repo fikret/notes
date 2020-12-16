@@ -66,9 +66,14 @@ Modern WordPress Server Stack
 
 ## AFTER INSTALLITION
 ### CRON TASKS
-You should disable cron on wp-config.php
+By default WordPress is setup to call wp-cron.php everytime someone visits your WordPress website when a scheduled task is present, to basically ask "is it time to do anything yet?".
 
+On low traffic sites this is perfectly fine, but when your site visits start to increase, checking multiple times for scheduled tasks can be very inefficient and lead to resource usage problems for the server, this will in turn make your website load slower.
+
+You should disable cron on wp-config.php 
+
+    define('DISABLE_WP_CRON', 'true');
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ1MzY2NDE2LC04OTU4MDA5NzJdfQ==
+eyJoaXN0b3J5IjpbODM3MTIyNzkyLC04OTU4MDA5NzJdfQ==
 -->
