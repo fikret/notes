@@ -78,10 +78,10 @@ You should disable cron on wp-config.php
     crontab -e
 Paste:
 
-  */10 * * * * cd /var/www/SITE-FOLDER/htdocs/ wp cron event run --due-now --allow-root
+  */10 * * * * cd /var/www/SITE-FOLDER/htdocs/; wp cron event run --due-now --allow-root
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNzMzNjM0NCwtMTE0MjgxNTMyMSwtOD
-k1ODAwOTcyXX0=
+eyJoaXN0b3J5IjpbMTQxNzYwMTc3NywxOTM3MzM2MzQ0LC0xMT
+QyODE1MzIxLC04OTU4MDA5NzJdfQ==
 -->
