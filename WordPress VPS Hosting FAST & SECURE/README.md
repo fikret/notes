@@ -63,6 +63,12 @@ Modern WordPress Server Stack
 
 </pre>
 
+
+## AFTER INSTALLITION
+### CRON TASKS
+You should disable cron on wp-config.php
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NTgwMDk3Ml19
+eyJoaXN0b3J5IjpbMzQ1MzY2NDE2LC04OTU4MDA5NzJdfQ==
 -->
