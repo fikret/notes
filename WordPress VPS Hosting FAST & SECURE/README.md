@@ -82,8 +82,11 @@ Paste:
 if you want to log cron events seperately edit this file:
 
     nano /etc/rsyslog.d/50-default.conf
-uncomment cron.* line
+uncomment **cron.*** line and restart the service
+
+    sudo service rsyslog restart
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA3MjEyOTE2LDE0MTc2MDE3NzcsMTkzNz
+eyJoaXN0b3J5IjpbLTM3NDM2NjQ4LDE0MTc2MDE3NzcsMTkzNz
 MzNjM0NCwtMTE0MjgxNTMyMSwtODk1ODAwOTcyXX0=
 -->
