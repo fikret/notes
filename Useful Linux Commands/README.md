@@ -28,7 +28,7 @@ foo 2>&1 | grep ERROR
 
     sudo chown -R www-data:www-data /var/www/xyz/htdocs/
 
-### Get files name into a directory and process it
+### Get files name into a directory and process every item
 
     files=(*)
     for item in ${files[*]}; do   printf "   %s\n" $item; done
@@ -36,6 +36,6 @@ foo 2>&1 | grep ERROR
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDAxNzQzNzAsMTkzMTExNTg2LC0yMD
-kzNjM0NjMzLC0xNDM5OTAzNzEsLTUzMzc0MTcwOF19
+eyJoaXN0b3J5IjpbOTgxOTQ1NzEzLDE5MzExMTU4NiwtMjA5Mz
+YzNDYzMywtMTQzOTkwMzcxLC01MzM3NDE3MDhdfQ==
 -->
