@@ -28,8 +28,14 @@ foo 2>&1 | grep ERROR
 
     sudo chown -R www-data:www-data /var/www/xyz/htdocs/
 
+### Get files name into a directory and process it
+
+    files=(*)
+    for item in ${files[*]}; do   printf "   %s\n" $item; done
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMTExNTg2LC0yMDkzNjM0NjMzLC0xND
-M5OTAzNzEsLTUzMzc0MTcwOF19
+eyJoaXN0b3J5IjpbLTE5NDAxNzQzNzAsMTkzMTExNTg2LC0yMD
+kzNjM0NjMzLC0xNDM5OTAzNzEsLTUzMzc0MTcwOF19
 -->
