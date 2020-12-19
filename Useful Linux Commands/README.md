@@ -31,11 +31,12 @@ foo 2>&1 | grep ERROR
 ### Get files name into a directory and process every item
 
     files=(*)
-    for item in ${files[*]}; do   printf "   %s\n" $item; done
+    for item in ${files[*]}; do   ec$item; done
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgxOTQ1NzEzLDE5MzExMTU4NiwtMjA5Mz
-YzNDYzMywtMTQzOTkwMzcxLC01MzM3NDE3MDhdfQ==
+eyJoaXN0b3J5IjpbLTE0OTg2MDU1OTgsOTgxOTQ1NzEzLDE5Mz
+ExMTU4NiwtMjA5MzYzNDYzMywtMTQzOTkwMzcxLC01MzM3NDE3
+MDhdfQ==
 -->
