@@ -33,10 +33,14 @@ foo 2>&1 | grep ERROR
     files=(*)
     for item in ${files[*]}; do echo "$item"; done
 
+## SSH
+
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDA1MDUzNDEsOTgxOTQ1NzEzLDE5Mz
-ExMTU4NiwtMjA5MzYzNDYzMywtMTQzOTkwMzcxLC01MzM3NDE3
-MDhdfQ==
+eyJoaXN0b3J5IjpbLTE2Mjg2NDAxNzMsLTE5MDA1MDUzNDEsOT
+gxOTQ1NzEzLDE5MzExMTU4NiwtMjA5MzYzNDYzMywtMTQzOTkw
+MzcxLC01MzM3NDE3MDhdfQ==
 -->
