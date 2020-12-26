@@ -52,7 +52,11 @@ You should now be able to login from the server where you generated the SSH Keys
 ## SCP
 Copy files between two servers via ssh
 ```
-scp -P 2322 file.txt remote_username@10.10.0.2:/remote/directory
+scp -P 2322 file.txt root@10.10.0.2:/remote/directory
+```
+Copy directory between two servers via ssh
+```
+scp -P 2322 -r /root/directory root@10.10.0.2:/remote/directory
 ```
 
 
@@ -61,7 +65,7 @@ scp -P 2322 file.txt remote_username@10.10.0.2:/remote/directory
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE2NzAwNDE3LDIwMTcyNTM3MywtMTYyOD
+eyJoaXN0b3J5IjpbMzI4OTAwNzQ3LDIwMTcyNTM3MywtMTYyOD
 Y0MDE3MywtMTkwMDUwNTM0MSw5ODE5NDU3MTMsMTkzMTExNTg2
 LC0yMDkzNjM0NjMzLC0xNDM5OTAzNzEsLTUzMzc0MTcwOF19
 -->
