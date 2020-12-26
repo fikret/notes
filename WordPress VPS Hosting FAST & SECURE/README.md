@@ -88,13 +88,14 @@ uncomment **cron.*** line and restart the service
     sudo service rsyslog restart
 
 ### Backup
+Create an backup.sh file and pas
 
     #!/bin/sh
     zaman=$(date +%Y-%m-%d-%H%M%S)
-    site=egitim_wpokulu_co
-    wp_site_path=/var/www/egitim.wpokulu.co/htdocs
-    site_root_path=/var/www/egitim.wpokulu.co
-    backup_path=/mnt/wpkulup-backup
+    site=your_site_name
+    wp_site_path=/var/www/SITE.COM/htdocs
+    site_root_path=/var/www/SITE.COM
+    backup_path=/mnt/BACKUP
     
     /usr/local/bin/wp db export --allow-root --path=$wp_site_path - | gzip > $backup_path/db_$site-backup-$zaman.sql.gz 
     gdrive upload $backup_path/db_$site-backup-$zaman.sql.gz
@@ -102,6 +103,6 @@ uncomment **cron.*** line and restart the service
     gdrive upload $backup_path/wp_$site-backup-$zaman.tar.gz 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODYwMjQyMjYsMTQxNzYwMTc3NywxOT
-M3MzM2MzQ0LC0xMTQyODE1MzIxLC04OTU4MDA5NzJdfQ==
+eyJoaXN0b3J5IjpbLTYyMzg3OTMxMywxNDE3NjAxNzc3LDE5Mz
+czMzYzNDQsLTExNDI4MTUzMjEsLTg5NTgwMDk3Ml19
 -->
