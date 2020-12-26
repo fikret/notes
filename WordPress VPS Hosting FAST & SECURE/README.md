@@ -88,7 +88,7 @@ uncomment **cron.*** line and restart the service
     sudo service rsyslog restart
 
 ### Backup
-Create an backup.sh file and paste below
+Create an backup.sh file and paste below. You must install gdrive before 
 
     #!/bin/sh
     zaman=$(date +%Y-%m-%d-%H%M%S)
@@ -105,8 +105,12 @@ Create an backup.sh file and paste below
 Change file chmod
 
     chmod +x backup.sh
-Cron backup rp
+Cron backup process -> crontab -e
+
+    30 03 * * * sh /root/backup.sh > /var/log/cronlog 2>&1
+    @daily root find /mnt/BACKUP/* -mtime +14 -type f -delete > /var/log/cronlog 2>&1
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2OTc3NzM0MywxNDE3NjAxNzc3LDE5Mz
+eyJoaXN0b3J5IjpbLTI2MTEzMTIzOSwxNDE3NjAxNzc3LDE5Mz
 czMzYzNDQsLTExNDI4MTUzMjEsLTg5NTgwMDk3Ml19
 -->
