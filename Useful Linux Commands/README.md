@@ -38,9 +38,15 @@ foo 2>&1 | grep ERROR
 ```
 ssh-keygen -t ed25519
 ``` 
+**Add SSH Public key to Remote Server**
+
+You can use the following command to automatically add the public SSH Key to the server :
+
+    ssh-copy-id -p 22 root@192.168.0.1
 **SSH Login without password**
 
 You should now be able to login from the server where you generated the SSH Keys to the other one without password :
+
 
     ssh -p 22 root@192.168.1.1 (Remote IP)
 
@@ -50,7 +56,7 @@ You should now be able to login from the server where you generated the SSH Keys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAxOTQxMTU5LC0xNjI4NjQwMTczLC0xOT
+eyJoaXN0b3J5IjpbMjAxNzI1MzczLC0xNjI4NjQwMTczLC0xOT
 AwNTA1MzQxLDk4MTk0NTcxMywxOTMxMTE1ODYsLTIwOTM2MzQ2
 MzMsLTE0Mzk5MDM3MSwtNTMzNzQxNzA4XX0=
 -->
