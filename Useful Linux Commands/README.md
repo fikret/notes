@@ -34,13 +34,22 @@ foo 2>&1 | grep ERROR
     for item in ${files[*]}; do echo "$item"; done
 
 ## SSH
+**Generate SSH-Keys**
+```
+ssh-keygen -t ed25519
+``` 
+**SSH Login without password**
+
+You should now be able to login from the server where you generated the SSH Keys to the other one without password :
+
+    ssh root@
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mjg2NDAxNzMsLTE5MDA1MDUzNDEsOT
-gxOTQ1NzEzLDE5MzExMTU4NiwtMjA5MzYzNDYzMywtMTQzOTkw
-MzcxLC01MzM3NDE3MDhdfQ==
+eyJoaXN0b3J5IjpbODkxMDE1MTk5LC0xNjI4NjQwMTczLC0xOT
+AwNTA1MzQxLDk4MTk0NTcxMywxOTMxMTE1ODYsLTIwOTM2MzQ2
+MzMsLTE0Mzk5MDM3MSwtNTMzNzQxNzA4XX0=
 -->
