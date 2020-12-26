@@ -42,14 +42,15 @@ ssh-keygen -t ed25519
 
 You should now be able to login from the server where you generated the SSH Keys to the other one without password :
 
-    ssh root@
+    ssh -p 22 root@192.168.1.1 (Remote IP)
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkxMDE1MTk5LC0xNjI4NjQwMTczLC0xOT
+eyJoaXN0b3J5IjpbMzAxOTQxMTU5LC0xNjI4NjQwMTczLC0xOT
 AwNTA1MzQxLDk4MTk0NTcxMywxOTMxMTE1ODYsLTIwOTM2MzQ2
 MzMsLTE0Mzk5MDM3MSwtNTMzNzQxNzA4XX0=
 -->
