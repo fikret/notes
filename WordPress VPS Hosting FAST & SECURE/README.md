@@ -88,7 +88,7 @@ uncomment **cron.*** line and restart the service
     sudo service rsyslog restart
 
 ### Backup
-Create an backup.sh file and pas
+Create an backup.sh file and paste below
 
     #!/bin/sh
     zaman=$(date +%Y-%m-%d-%H%M%S)
@@ -102,7 +102,11 @@ Create an backup.sh file and pas
     tar --create --gzip --absolute-names --file=$backup_path/wp_$site-backup-$zaman.tar.gz --exclude=*.tar.gz $site_root_path
     gdrive upload $backup_path/wp_$site-backup-$zaman.tar.gz 
 
+Change file chmod
+
+    chmod +x backup.sh
+Cron backup rp
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMzg3OTMxMywxNDE3NjAxNzc3LDE5Mz
+eyJoaXN0b3J5IjpbMTM2OTc3NzM0MywxNDE3NjAxNzc3LDE5Mz
 czMzYzNDQsLTExNDI4MTUzMjEsLTg5NTgwMDk3Ml19
 -->
