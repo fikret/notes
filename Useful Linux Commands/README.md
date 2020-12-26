@@ -49,6 +49,11 @@ You should now be able to login from the server where you generated the SSH Keys
 
 
     ssh -p 22 root@192.168.1.1 (Remote IP)
+## SCP
+Copy files between two servers via ssh
+```
+scp -P 2322 file.txt remote_username@10.10.0.2:/remote/directory
+```
 
 
 
@@ -56,7 +61,7 @@ You should now be able to login from the server where you generated the SSH Keys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNzI1MzczLC0xNjI4NjQwMTczLC0xOT
-AwNTA1MzQxLDk4MTk0NTcxMywxOTMxMTE1ODYsLTIwOTM2MzQ2
-MzMsLTE0Mzk5MDM3MSwtNTMzNzQxNzA4XX0=
+eyJoaXN0b3J5IjpbNjE2NzAwNDE3LDIwMTcyNTM3MywtMTYyOD
+Y0MDE3MywtMTkwMDUwNTM0MSw5ODE5NDU3MTMsMTkzMTExNTg2
+LC0yMDkzNjM0NjMzLC0xNDM5OTAzNzEsLTUzMzc0MTcwOF19
 -->
