@@ -110,9 +110,10 @@ Cron backup process -> crontab -e
     30 03 * * * sh /root/backup.sh > /var/log/cronlog 2>&1
     @daily root find /mnt/BACKUP/* -mtime +14 -type f -delete > /var/log/cronlog 2>&1
 
-
+### Setup Child Process for PHP-FPM
+This is very important for high traffic sites. You should set your php child proe
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgzNzUzNjM2LDc4MDYxMzM2NiwxNDE3Nj
-AxNzc3LDE5MzczMzYzNDQsLTExNDI4MTUzMjEsLTg5NTgwMDk3
-Ml19
+eyJoaXN0b3J5IjpbOTk1NTk5ODQ5LDU4Mzc1MzYzNiw3ODA2MT
+MzNjYsMTQxNzYwMTc3NywxOTM3MzM2MzQ0LC0xMTQyODE1MzIx
+LC04OTU4MDA5NzJdfQ==
 -->
