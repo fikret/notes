@@ -117,11 +117,14 @@ This is very important for high traffic sites. You should set your php child pro
 ### Monitoring Slow PHP Scripts
 
     nano /etc/php/7.3/fpm/pool.d/www.conf
-    
-    
+
+> slowlog = /var/log/php/7.3/slow.log
+request_slowlog_timeout = 3s
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIyMTUwNDE3LDE1ODkyNjg2NTksNTgzNz
-UzNjM2LDc4MDYxMzM2NiwxNDE3NjAxNzc3LDE5MzczMzYzNDQs
-LTExNDI4MTUzMjEsLTg5NTgwMDk3Ml19
+eyJoaXN0b3J5IjpbMTg1NjA4NTY1OCwxNTg5MjY4NjU5LDU4Mz
+c1MzYzNiw3ODA2MTMzNjYsMTQxNzYwMTc3NywxOTM3MzM2MzQ0
+LC0xMTQyODE1MzIxLC04OTU4MDA5NzJdfQ==
 -->
