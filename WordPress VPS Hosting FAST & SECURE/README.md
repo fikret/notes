@@ -116,8 +116,12 @@ This is very important for high traffic sites. You should set your php child pro
 ## Monitoring
 ### Monitoring Slow PHP Scripts
 
+    nano /etc/php/7.3/fpm/pool.d/www.conf
+    
+    
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzk1Njg5MDEsMTU4OTI2ODY1OSw1OD
-M3NTM2MzYsNzgwNjEzMzY2LDE0MTc2MDE3NzcsMTkzNzMzNjM0
-NCwtMTE0MjgxNTMyMSwtODk1ODAwOTcyXX0=
+eyJoaXN0b3J5IjpbNTIyMTUwNDE3LDE1ODkyNjg2NTksNTgzNz
+UzNjM2LDc4MDYxMzM2NiwxNDE3NjAxNzc3LDE5MzczMzYzNDQs
+LTExNDI4MTUzMjEsLTg5NTgwMDk3Ml19
 -->
