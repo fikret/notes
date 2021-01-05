@@ -110,7 +110,9 @@ Cron backup process -> crontab -e
     30 03 * * * sh /root/backup.sh > /var/log/cronlog 2>&1
     @daily root find /mnt/BACKUP/* -mtime +14 -type f -delete > /var/log/cronlog 2>&1
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgwNjEzMzY2LDE0MTc2MDE3NzcsMTkzNz
-MzNjM0NCwtMTE0MjgxNTMyMSwtODk1ODAwOTcyXX0=
+eyJoaXN0b3J5IjpbNTgzNzUzNjM2LDc4MDYxMzM2NiwxNDE3Nj
+AxNzc3LDE5MzczMzYzNDQsLTExNDI4MTUzMjEsLTg5NTgwMDk3
+Ml19
 -->
