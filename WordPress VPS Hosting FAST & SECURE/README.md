@@ -112,8 +112,12 @@ Cron backup process -> crontab -e
 
 ### Setup Child Process for PHP-FPM
 This is very important for high traffic sites. You should set your php child process depends your process memory usage and your RAM size. [Please follow this notes](https://gist.github.com/fikret/ff87b8ebe71935468f32ef2a0a0d44dc)
+
+## Monitoring
+### Monitoring Slow PHP Scripts
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4OTI2ODY1OSw1ODM3NTM2MzYsNzgwNj
-EzMzY2LDE0MTc2MDE3NzcsMTkzNzMzNjM0NCwtMTE0MjgxNTMy
-MSwtODk1ODAwOTcyXX0=
+eyJoaXN0b3J5IjpbLTEyNzk1Njg5MDEsMTU4OTI2ODY1OSw1OD
+M3NTM2MzYsNzgwNjEzMzY2LDE0MTc2MDE3NzcsMTkzNzMzNjM0
+NCwtMTE0MjgxNTMyMSwtODk1ODAwOTcyXX0=
 -->
