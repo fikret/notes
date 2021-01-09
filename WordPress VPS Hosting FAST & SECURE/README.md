@@ -119,12 +119,12 @@ This is very important for high traffic sites. You should set your php child pro
     nano /etc/php/7.3/fpm/pool.d/www.conf
 
 > slowlog = /var/log/php/7.3/slow.log
-request_slowlog_timeout = 5s
+request_slowlog_timeout = 5ws
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTI2NzgyNDQsMTU4OTI2ODY1OSw1OD
+eyJoaXN0b3J5IjpbLTE5NTgyODg0NTEsMTU4OTI2ODY1OSw1OD
 M3NTM2MzYsNzgwNjEzMzY2LDE0MTc2MDE3NzcsMTkzNzMzNjM0
 NCwtMTE0MjgxNTMyMSwtODk1ODAwOTcyXX0=
 -->
