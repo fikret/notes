@@ -3,6 +3,9 @@ python3 -m pip install woocommerce unidecode
 
 chown www-data:www-data customers.db 
 
+https://thisinterestsme.com/receiving-json-post-data-via-php/
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MTA5MjYyNSwyNDY3MjQ1MjldfQ==
+eyJoaXN0b3J5IjpbMTM4ODQ3MDcyNywxNTkxMDkyNjI1LDI0Nj
+cyNDUyOV19
 -->
