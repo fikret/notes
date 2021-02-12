@@ -69,8 +69,8 @@ Edit cron jobs
 crontab -e
 ```
 When you create cronjobs you should use exact path for all commands example:
-t
 
+    enter code here
 
 
 
@@ -78,8 +78,8 @@ t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM1MzM2NjE2LDMyODkwMDc0NywyMDE3Mj
-UzNzMsLTE2Mjg2NDAxNzMsLTE5MDA1MDUzNDEsOTgxOTQ1NzEz
-LDE5MzExMTU4NiwtMjA5MzYzNDYzMywtMTQzOTkwMzcxLC01Mz
-M3NDE3MDhdfQ==
+eyJoaXN0b3J5IjpbMjAxMzEzMjI2MSwzMjg5MDA3NDcsMjAxNz
+I1MzczLC0xNjI4NjQwMTczLC0xOTAwNTA1MzQxLDk4MTk0NTcx
+MywxOTMxMTE1ODYsLTIwOTM2MzQ2MzMsLTE0Mzk5MDM3MSwtNT
+MzNzQxNzA4XX0=
 -->
