@@ -59,13 +59,16 @@ Copy directory between two servers via ssh
 scp -P 2322 -r /root/directory root@10.10.0.2:/remote/directory
 ```
 
+## Cron Jobs
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI4OTAwNzQ3LDIwMTcyNTM3MywtMTYyOD
-Y0MDE3MywtMTkwMDUwNTM0MSw5ODE5NDU3MTMsMTkzMTExNTg2
-LC0yMDkzNjM0NjMzLC0xNDM5OTAzNzEsLTUzMzc0MTcwOF19
+eyJoaXN0b3J5IjpbMTIzODQ1OTUxOSwzMjg5MDA3NDcsMjAxNz
+I1MzczLC0xNjI4NjQwMTczLC0xOTAwNTA1MzQxLDk4MTk0NTcx
+MywxOTMxMTE1ODYsLTIwOTM2MzQ2MzMsLTE0Mzk5MDM3MSwtNT
+MzNzQxNzA4XX0=
 -->
