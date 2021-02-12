@@ -62,8 +62,14 @@ scp -P 2322 -r /root/directory root@10.10.0.2:/remote/directory
 ## Cron Jobs
 List cron jobs
 ```
-scp -P 2322 -r /root/directory root@10.10.0.2:/remote/directory
+crontab -l
 ```
+Edit cron jobs
+```
+crontab -e
+```
+When you create cronjobs you should use exact path for all commands example:
+t
 
 
 
@@ -72,8 +78,8 @@ scp -P 2322 -r /root/directory root@10.10.0.2:/remote/directory
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Nzk1NzgyOTAsMzI4OTAwNzQ3LDIwMT
-cyNTM3MywtMTYyODY0MDE3MywtMTkwMDUwNTM0MSw5ODE5NDU3
-MTMsMTkzMTExNTg2LC0yMDkzNjM0NjMzLC0xNDM5OTAzNzEsLT
-UzMzc0MTcwOF19
+eyJoaXN0b3J5IjpbMzM1MzM2NjE2LDMyODkwMDc0NywyMDE3Mj
+UzNzMsLTE2Mjg2NDAxNzMsLTE5MDA1MDUzNDEsOTgxOTQ1NzEz
+LDE5MzExMTU4NiwtMjA5MzYzNDYzMywtMTQzOTkwMzcxLC01Mz
+M3NDE3MDhdfQ==
 -->
