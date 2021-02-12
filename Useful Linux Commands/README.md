@@ -70,7 +70,10 @@ crontab -e
 ```
 When you create cronjobs you should use exact path for all commands example:
 
-    enter code here
+    19 0 * * * "/etc/letsencrypt"/acme.sh --cron --home "/etc/letsencrypt" --config-home "/etc/letsencrypt/config" > /dev/null
+    15 * * * * /usr/bin/sudo /usr/bin/wordopsAutomation.sh
+
+chmod +x wordopsAutomation.sh
 
 
 
@@ -78,7 +81,7 @@ When you create cronjobs you should use exact path for all commands example:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMzEzMjI2MSwzMjg5MDA3NDcsMjAxNz
+eyJoaXN0b3J5IjpbMTI3NDM1ODA2OCwzMjg5MDA3NDcsMjAxNz
 I1MzczLC0xNjI4NjQwMTczLC0xOTAwNTA1MzQxLDk4MTk0NTcx
 MywxOTMxMTE1ODYsLTIwOTM2MzQ2MzMsLTE0Mzk5MDM3MSwtNT
 MzNzQxNzA4XX0=
