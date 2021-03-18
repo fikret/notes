@@ -36,7 +36,7 @@ foo 2>&1 | grep ERROR
 ## SSH
 **Generate SSH-Keys**
 ```
-ssh-keygen -t ed25519
+	ssh-keygen -t ed25519
 ``` 
 **Add SSH Public key to Remote Server**
 
@@ -82,8 +82,8 @@ chmod +x wordopsAutomation.sh
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NTE0NDIxNiwxMjc0MzU4MDY4LDMyOD
-kwMDc0NywyMDE3MjUzNzMsLTE2Mjg2NDAxNzMsLTE5MDA1MDUz
-NDEsOTgxOTQ1NzEzLDE5MzExMTU4NiwtMjA5MzYzNDYzMywtMT
-QzOTkwMzcxLC01MzM3NDE3MDhdfQ==
+eyJoaXN0b3J5IjpbLTE3OTIwMTI5NDQsMTg0NTE0NDIxNiwxMj
+c0MzU4MDY4LDMyODkwMDc0NywyMDE3MjUzNzMsLTE2Mjg2NDAx
+NzMsLTE5MDA1MDUzNDEsOTgxOTQ1NzEzLDE5MzExMTU4NiwtMj
+A5MzYzNDYzMywtMTQzOTkwMzcxLC01MzM3NDE3MDhdfQ==
 -->
