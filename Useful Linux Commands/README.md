@@ -76,14 +76,25 @@ When you create cronjobs you should use exact path for all commands also you sho
 
 chmod +x wordopsAutomation.sh
 
+## Script for bulk web site
+
+for i in {3..30}
+do
+   wo site create --wp ku$i.sb1.wpokulu.club --user=wpokulu --pass=Pembe1dunya. --email=iletisim@wpokulu.co -le
+done
+
+
+wo site create --wp ku$i.sb1.wpokulu.club --user=yigit --pass=Pembe1dunya. --email=iletisim@wpokulu.co -le
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTIwMTI5NDQsMTg0NTE0NDIxNiwxMj
-c0MzU4MDY4LDMyODkwMDc0NywyMDE3MjUzNzMsLTE2Mjg2NDAx
-NzMsLTE5MDA1MDUzNDEsOTgxOTQ1NzEzLDE5MzExMTU4NiwtMj
-A5MzYzNDYzMywtMTQzOTkwMzcxLC01MzM3NDE3MDhdfQ==
+eyJoaXN0b3J5IjpbMTg0Mzk0ODE2LC0xNzkyMDEyOTQ0LDE4ND
+UxNDQyMTYsMTI3NDM1ODA2OCwzMjg5MDA3NDcsMjAxNzI1Mzcz
+LC0xNjI4NjQwMTczLC0xOTAwNTA1MzQxLDk4MTk0NTcxMywxOT
+MxMTE1ODYsLTIwOTM2MzQ2MzMsLTE0Mzk5MDM3MSwtNTMzNzQx
+NzA4XX0=
 -->
