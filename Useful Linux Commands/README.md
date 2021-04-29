@@ -78,21 +78,16 @@ chmod +x wordopsAutomation.sh
 
 ## Script for bulk web site
 
-for i in {3..30}
-do
-   wo site create --wp ku$i.sb1.wpokulu.club --user=wpokulu --pass=Pembe1dunya. --email=iletisim@wpokulu.co -le
-done
-
-
-wo site create --wp ku$i.sb1.wpokulu.club --user=yigit --pass=Pembe1dunya. --email=iletisim@wpokulu.co -le
-
-
+    for i in {3..30}
+    do
+       wo site create --wp ku$i.sb1.wpokulu.club --user=USERNAME --pass=PASSS --email=mail@mail.com -le
+    done
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0Mzk0ODE2LC0xNzkyMDEyOTQ0LDE4ND
+eyJoaXN0b3J5IjpbMTkwOTIyNzYzLC0xNzkyMDEyOTQ0LDE4ND
 UxNDQyMTYsMTI3NDM1ODA2OCwzMjg5MDA3NDcsMjAxNzI1Mzcz
 LC0xNjI4NjQwMTczLC0xOTAwNTA1MzQxLDk4MTk0NTcxMywxOT
 MxMTE1ODYsLTIwOTM2MzQ2MzMsLTE0Mzk5MDM3MSwtNTMzNzQx
