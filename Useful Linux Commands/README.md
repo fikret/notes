@@ -83,13 +83,16 @@ chmod +x wordopsAutomation.sh
        wo site create --wp ku$i.sb1.wpokulu.club --user=USERNAME --pass=PASSS --email=mail@mail.com -le
     done
 
+## rsync
+
+    enter code here
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMjM2MzIzMiwxOTA5MjI3NjMsLTE3OT
-IwMTI5NDQsMTg0NTE0NDIxNiwxMjc0MzU4MDY4LDMyODkwMDc0
-NywyMDE3MjUzNzMsLTE2Mjg2NDAxNzMsLTE5MDA1MDUzNDEsOT
-gxOTQ1NzEzLDE5MzExMTU4NiwtMjA5MzYzNDYzMywtMTQzOTkw
-MzcxLC01MzM3NDE3MDhdfQ==
+eyJoaXN0b3J5IjpbMjA2NDUwMTEwNCwtOTIyMzYzMjMyLDE5MD
+kyMjc2MywtMTc5MjAxMjk0NCwxODQ1MTQ0MjE2LDEyNzQzNTgw
+NjgsMzI4OTAwNzQ3LDIwMTcyNTM3MywtMTYyODY0MDE3MywtMT
+kwMDUwNTM0MSw5ODE5NDU3MTMsMTkzMTExNTg2LC0yMDkzNjM0
+NjMzLC0xNDM5OTAzNzEsLTUzMzc0MTcwOF19
 -->
