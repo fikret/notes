@@ -85,14 +85,14 @@ chmod +x wordopsAutomation.sh
 
 ## rsync
 
-    enter code here
+    rsync -avzh --progress 'ssh -p PORTNUMBER' --ignore-existing \ root@IP:/root/FOLDER/ \ /root/FOLDER/
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NDUwMTEwNCwtOTIyMzYzMjMyLDE5MD
-kyMjc2MywtMTc5MjAxMjk0NCwxODQ1MTQ0MjE2LDEyNzQzNTgw
-NjgsMzI4OTAwNzQ3LDIwMTcyNTM3MywtMTYyODY0MDE3MywtMT
-kwMDUwNTM0MSw5ODE5NDU3MTMsMTkzMTExNTg2LC0yMDkzNjM0
-NjMzLC0xNDM5OTAzNzEsLTUzMzc0MTcwOF19
+eyJoaXN0b3J5IjpbOTY1NjkwODM1LC05MjIzNjMyMzIsMTkwOT
+IyNzYzLC0xNzkyMDEyOTQ0LDE4NDUxNDQyMTYsMTI3NDM1ODA2
+OCwzMjg5MDA3NDcsMjAxNzI1MzczLC0xNjI4NjQwMTczLC0xOT
+AwNTA1MzQxLDk4MTk0NTcxMywxOTMxMTE1ODYsLTIwOTM2MzQ2
+MzMsLTE0Mzk5MDM3MSwtNTMzNzQxNzA4XX0=
 -->
