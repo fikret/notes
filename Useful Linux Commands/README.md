@@ -78,7 +78,7 @@ chmod +x wordopsAutomation.sh
 
 ## Script for bulk web site
 
-    for i in {3..30}
+    for i in {1..30}
     do
        wo site create --wp ku$i.sb1.wpokulu.club --user=USERNAME --pass=PASSS --email=mail@mail.com -le
     done
@@ -90,9 +90,10 @@ chmod +x wordopsAutomation.sh
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY1NjkwODM1LC05MjIzNjMyMzIsMTkwOT
-IyNzYzLC0xNzkyMDEyOTQ0LDE4NDUxNDQyMTYsMTI3NDM1ODA2
-OCwzMjg5MDA3NDcsMjAxNzI1MzczLC0xNjI4NjQwMTczLC0xOT
-AwNTA1MzQxLDk4MTk0NTcxMywxOTMxMTE1ODYsLTIwOTM2MzQ2
-MzMsLTE0Mzk5MDM3MSwtNTMzNzQxNzA4XX0=
+eyJoaXN0b3J5IjpbLTEyMzA1MzI0NTksOTY1NjkwODM1LC05Mj
+IzNjMyMzIsMTkwOTIyNzYzLC0xNzkyMDEyOTQ0LDE4NDUxNDQy
+MTYsMTI3NDM1ODA2OCwzMjg5MDA3NDcsMjAxNzI1MzczLC0xNj
+I4NjQwMTczLC0xOTAwNTA1MzQxLDk4MTk0NTcxMywxOTMxMTE1
+ODYsLTIwOTM2MzQ2MzMsLTE0Mzk5MDM3MSwtNTMzNzQxNzA4XX
+0=
 -->
