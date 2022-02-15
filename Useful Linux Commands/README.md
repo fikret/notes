@@ -87,13 +87,39 @@ chmod +x wordopsAutomation.sh
 
     rsync -avzh --progress 'ssh -p PORTNUMBER' --ignore-existing \ root@IP:/root/FOLDER/ \ /root/FOLDER/
 
+## How to find and kill deleted PID (if disk is full)
+
+```
+#lsof +L1
+
+```
+
+Which will show the list of files that holding memory with deleted quote.
+
+Note the  **pid**  ( Process id ) of the file
+
+Kill the process
+
+```
+#kill <pid>
+
+```
+
+The memory will be released by the process
+
+Check it by command
+
+```
+#df -h
+```
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzA1MzI0NTksOTY1NjkwODM1LC05Mj
-IzNjMyMzIsMTkwOTIyNzYzLC0xNzkyMDEyOTQ0LDE4NDUxNDQy
-MTYsMTI3NDM1ODA2OCwzMjg5MDA3NDcsMjAxNzI1MzczLC0xNj
-I4NjQwMTczLC0xOTAwNTA1MzQxLDk4MTk0NTcxMywxOTMxMTE1
-ODYsLTIwOTM2MzQ2MzMsLTE0Mzk5MDM3MSwtNTMzNzQxNzA4XX
-0=
+eyJoaXN0b3J5IjpbOTY1NjQ2ODQ1LC0xMjMwNTMyNDU5LDk2NT
+Y5MDgzNSwtOTIyMzYzMjMyLDE5MDkyMjc2MywtMTc5MjAxMjk0
+NCwxODQ1MTQ0MjE2LDEyNzQzNTgwNjgsMzI4OTAwNzQ3LDIwMT
+cyNTM3MywtMTYyODY0MDE3MywtMTkwMDUwNTM0MSw5ODE5NDU3
+MTMsMTkzMTExNTg2LC0yMDkzNjM0NjMzLC0xNDM5OTAzNzEsLT
+UzMzc0MTcwOF19
 -->
