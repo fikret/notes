@@ -114,12 +114,52 @@ Check it by command
 ```
 
 
+How to install a **custom third-party SSL certificate on WordOps** is such a topic. While you can easily find plenty of tutorials and howto’s on how to install a SSL cert on nginx, these guides don’t take into account some specifics of the WordOps stack. Here’s an update-proof way to add a 3rd party SSL certificate to WordOps:
 
+1. Copy your signed certificate, the CA certificate bundle (which contains the root and intermediate certificates) and the private key to `/etc/ssl/yoursite.com/` and change into the directory. Obviously replace `yoursite.com` with your WordOps site.
+
+```
+cd /etc/ssl/yoursite.com/
+```
+
+2. Combine the signed cert and the CA bundle:
+
+```
+cat 234567890.crt 234567890.ca-bundle >> yoursite.crt
+```
+
+3. Create the file `/var/www/yoursite.com/conf/nginx/ssl.conf` and add the following lines:
+
+```
+listen 443 ssl http2;
+listen [::]:443 ssl http2;
+ssl on;
+ssl_certificate        /etc/ssl/yoursite.com/yoursite.crt;
+ssl_certificate_key    /etc/ssl/yoursite.com/private.key;
+```
+
+4. In order to properly redirect http traffic to https, create the file `/etc/nginx/conf.d/force-ssl-yoursite.com.conf` and add the following lines:
+
+```
+server {
+    listen 80;
+    server_name yoursite.com www.yoursite.com;
+    return 301 https://www.yoursite.com$request_uri;
+}
+```
+
+5. Apply the new configuration to nginx and you’re done:
+
+```
+service nginx reload
+```
+
+I hope this helps.  sourse: irocknow.ch
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY1NjQ2ODQ1LC0xMjMwNTMyNDU5LDk2NT
-Y5MDgzNSwtOTIyMzYzMjMyLDE5MDkyMjc2MywtMTc5MjAxMjk0
-NCwxODQ1MTQ0MjE2LDEyNzQzNTgwNjgsMzI4OTAwNzQ3LDIwMT
-cyNTM3MywtMTYyODY0MDE3MywtMTkwMDUwNTM0MSw5ODE5NDU3
-MTMsMTkzMTExNTg2LC0yMDkzNjM0NjMzLC0xNDM5OTAzNzEsLT
-UzMzc0MTcwOF19
+eyJoaXN0b3J5IjpbLTE0OTgxNzYzMzAsOTY1NjQ2ODQ1LC0xMj
+MwNTMyNDU5LDk2NTY5MDgzNSwtOTIyMzYzMjMyLDE5MDkyMjc2
+MywtMTc5MjAxMjk0NCwxODQ1MTQ0MjE2LDEyNzQzNTgwNjgsMz
+I4OTAwNzQ3LDIwMTcyNTM3MywtMTYyODY0MDE3MywtMTkwMDUw
+NTM0MSw5ODE5NDU3MTMsMTkzMTExNTg2LC0yMDkzNjM0NjMzLC
+0xNDM5OTAzNzEsLTUzMzc0MTcwOF19
 -->
