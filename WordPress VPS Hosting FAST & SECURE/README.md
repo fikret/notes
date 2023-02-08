@@ -147,15 +147,16 @@ request_slowlog_timeout = 5ws
 > UI_PORT = "XXXX"
 > UI_USER = "USERNAMEMMM"
 > UI_PASS = "USERPASSSS"
+### ALLOW WHITE IP
 
-
+    nano /etc/csf/csf.allow
+### Config UI
 
     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMTg4NDEzNCwtMTk1ODI4ODQ1MSwxNT
-g5MjY4NjU5LDU4Mzc1MzYzNiw3ODA2MTMzNjYsMTQxNzYwMTc3
-NywxOTM3MzM2MzQ0LC0xMTQyODE1MzIxLC04OTU4MDA5NzJdfQ
-==
+eyJoaXN0b3J5IjpbMjgzOTgxMzcsLTE5NTgyODg0NTEsMTU4OT
+I2ODY1OSw1ODM3NTM2MzYsNzgwNjEzMzY2LDE0MTc2MDE3Nzcs
+MTkzNzMzNjM0NCwtMTE0MjgxNTMyMSwtODk1ODAwOTcyXX0=
 -->
