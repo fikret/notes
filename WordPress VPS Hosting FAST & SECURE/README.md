@@ -123,10 +123,19 @@ request_slowlog_timeout = 5ws
 
 ## Firewall CSF
 
+    apt install libwww-perl
+    cd /usr/src
+    wget https://download.configserver.com/csf.tgz
+    tar xzf csf.tgz
+    cd csf
+    sh install.sh
+    perl /usr/local/csf/bin/csftest.pl
+    
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ1NDA2MTA1LC0xOTU4Mjg4NDUxLDE1OD
-kyNjg2NTksNTgzNzUzNjM2LDc4MDYxMzM2NiwxNDE3NjAxNzc3
-LDE5MzczMzYzNDQsLTExNDI4MTUzMjEsLTg5NTgwMDk3Ml19
+eyJoaXN0b3J5IjpbLTEyODg1NTMwMzYsLTE5NTgyODg0NTEsMT
+U4OTI2ODY1OSw1ODM3NTM2MzYsNzgwNjEzMzY2LDE0MTc2MDE3
+NzcsMTkzNzMzNjM0NCwtMTE0MjgxNTMyMSwtODk1ODAwOTcyXX
+0=
 -->
