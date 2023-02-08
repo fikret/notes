@@ -130,11 +130,18 @@ request_slowlog_timeout = 5ws
     cd csf
     sh install.sh
     perl /usr/local/csf/bin/csftest.pl
+
+### Stop Other Firewall
+    systemctl stop firewalld
+    systemctl disable firewalld
+### Config CSF
+
+    nano /etc/csf/csf.conf
     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODg1NTMwMzYsLTE5NTgyODg0NTEsMT
+eyJoaXN0b3J5IjpbLTEwNDMyNDQ2OTUsLTE5NTgyODg0NTEsMT
 U4OTI2ODY1OSw1ODM3NTM2MzYsNzgwNjEzMzY2LDE0MTc2MDE3
 NzcsMTkzNzMzNjM0NCwtMTE0MjgxNTMyMSwtODk1ODAwOTcyXX
 0=
