@@ -150,13 +150,21 @@ request_slowlog_timeout = 5ws
 ### ALLOW WHITE IP
 
     nano /etc/csf/csf.allow
-### Config UI
+### Config UI Access
+
+    nano /etc/csf/ui/ui.allow
+### Start CSF
+
+    systemctl restart {csf,lfd}
+    systemctl enable {csf,lfd}
+    systemctl is-active {csf,lfd}
+    csf -v
 
     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgzOTgxMzcsLTE5NTgyODg0NTEsMTU4OT
-I2ODY1OSw1ODM3NTM2MzYsNzgwNjEzMzY2LDE0MTc2MDE3Nzcs
-MTkzNzMzNjM0NCwtMTE0MjgxNTMyMSwtODk1ODAwOTcyXX0=
+eyJoaXN0b3J5IjpbMjgwMDQyNjAxLC0xOTU4Mjg4NDUxLDE1OD
+kyNjg2NTksNTgzNzUzNjM2LDc4MDYxMzM2NiwxNDE3NjAxNzc3
+LDE5MzczMzYzNDQsLTExNDI4MTUzMjEsLTg5NTgwMDk3Ml19
 -->
