@@ -63,7 +63,7 @@ Modern WordPress Server Stack
 
 </pre>
 ## Change SSH Settings
-
+C
 
 
 ## AFTER INSTALLITION
@@ -166,8 +166,8 @@ request_slowlog_timeout = 5ws
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjM2NTgwODgsMjgwMDQyNjAxLC0xOT
-U4Mjg4NDUxLDE1ODkyNjg2NTksNTgzNzUzNjM2LDc4MDYxMzM2
-NiwxNDE3NjAxNzc3LDE5MzczMzYzNDQsLTExNDI4MTUzMjEsLT
-g5NTgwMDk3Ml19
+eyJoaXN0b3J5IjpbMTcyMTE5MTMxNywtMTU2MzY1ODA4OCwyOD
+AwNDI2MDEsLTE5NTgyODg0NTEsMTU4OTI2ODY1OSw1ODM3NTM2
+MzYsNzgwNjEzMzY2LDE0MTc2MDE3NzcsMTkzNzMzNjM0NCwtMT
+E0MjgxNTMyMSwtODk1ODAwOTcyXX0=
 -->
