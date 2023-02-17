@@ -66,7 +66,10 @@ Modern WordPress Server Stack
 Change root password
 
     passwd
+Change SSH Port No
 
+    nano /etc/ssh/sshd.config
+    systemctl restart sshd.service
 
 
 ## AFTER INSTALLITION
@@ -169,8 +172,8 @@ request_slowlog_timeout = 5ws
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1Nzk2Mjg2OSwtMTU2MzY1ODA4OCwyOD
-AwNDI2MDEsLTE5NTgyODg0NTEsMTU4OTI2ODY1OSw1ODM3NTM2
-MzYsNzgwNjEzMzY2LDE0MTc2MDE3NzcsMTkzNzMzNjM0NCwtMT
-E0MjgxNTMyMSwtODk1ODAwOTcyXX0=
+eyJoaXN0b3J5IjpbLTEyNzYxMjQ5NTgsMTc1Nzk2Mjg2OSwtMT
+U2MzY1ODA4OCwyODAwNDI2MDEsLTE5NTgyODg0NTEsMTU4OTI2
+ODY1OSw1ODM3NTM2MzYsNzgwNjEzMzY2LDE0MTc2MDE3NzcsMT
+kzNzMzNjM0NCwtMTE0MjgxNTMyMSwtODk1ODAwOTcyXX0=
 -->
