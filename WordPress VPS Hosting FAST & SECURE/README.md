@@ -168,7 +168,48 @@ request_slowlog_timeout = 5ws
     systemctl is-active {csf,lfd}
     csf -v
 
+### CSF Allow Only Cloudflare
+Do not forget add your ip to allow list
+
+
+nano /etc/csf/csf.allow
+ADD YOUR IP
+
+#CF IP ADRESS
+tcp|in|d=80,443|s=173.245.48.0/20
+tcp|in|d=80,443|s=103.21.244.0/22
+tcp|in|d=80,443|s=103.22.200.0/22
+tcp|in|d=80,443|s=103.31.4.0/22
+tcp|in|d=80,443|s=141.101.64.0/18
+tcp|in|d=80,443|s=108.162.192.0/18
+tcp|in|d=80,443|s=190.93.240.0/20
+tcp|in|d=80,443|s=188.114.96.0/20
+tcp|in|d=80,443|s=197.234.240.0/22
+tcp|in|d=80,443|s=198.41.128.0/17
+tcp|in|d=80,443|s=162.158.0.0/15
+tcp|in|d=80,443|s=104.16.0.0/13
+tcp|in|d=80,443|s=104.24.0.0/14
+tcp|in|d=80,443|s=172.64.0.0/13
+tcp|in|d=80,443|s=131.0.72.0/22
+tcp|in|d=80,443|s=2400:cb00::/32
+tcp|in|d=80,443|s=2606:4700::/32
+tcp|in|d=80,443|s=2803:f800::/32
+tcp|in|d=80,443|s=2405:b500::/32
+tcp|in|d=80,443|s=2405:8100::/32
+tcp|in|d=80,443|s=2a06:98c0::/29
+tcp|in|d=80,443|s=2c0f:f248::/32
+
+
+DENY ALL
+    nano /etc/csf/csf.deny
+>tcp|in|d=443,80|s=0.0.0.0/0
+
     
+    nano /etc/csf/csf.ignore
+    add your ip
+    
+    sudo service lfd restart
+    csf -r
 
 
 <!--stackedit_data:
