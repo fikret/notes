@@ -211,10 +211,43 @@ DENY ALL
     sudo service lfd restart
     csf -r
 
+## Send Mail via Sendgrid API
+
+    SENDGRID_API_KEY="APIKEY_HERE_WITH_ONLY_SEND_PERMISSION"
+    EMAIL_TO="tomail@gmail.com"
+    FROM_EMAIL="sendgridfrommail@domain.tld"
+    FROM_NAME="Sandbox"
+    SUBJECT="`hostname` WELCOME"
+    
+    
+            MESSAGE="$(</tmp/clam.hourly)"
+            MESSAGE_HTML="${MESSAGE//$'\n'/<br />}"
+    
+            REQUEST_DATA='{"personalizations": [{ 
+                       "to": [{ "email": "'"$EMAIL_TO"'" }],
+                       "subject": "'"$SUBJECT"'" 
+                    }],
+                    "from": {
+                        "email": "'"$FROM_EMAIL"'",
+                        "name": "'"$FROM_NAME"'" 
+                    },
+                    "content": [{
+                        "type": "text/html",
+                        "value": "'"$MESSAGE_HTML"'"
+                    }]
+            }';
+    
+    
+    curl --request POST \
+      --url https://api.sendgrid.com/v3/mail/send \
+      --header 'Authorization: Bearer '$SENDGRID_API_KEY \
+      --header 'Content-Type: application/json' \
+      --data "$REQUEST_DATA"
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzYxMjQ5NTgsMTc1Nzk2Mjg2OSwtMT
-U2MzY1ODA4OCwyODAwNDI2MDEsLTE5NTgyODg0NTEsMTU4OTI2
-ODY1OSw1ODM3NTM2MzYsNzgwNjEzMzY2LDE0MTc2MDE3NzcsMT
-kzNzMzNjM0NCwtMTE0MjgxNTMyMSwtODk1ODAwOTcyXX0=
+eyJoaXN0b3J5IjpbLTU3MDIwNjA4OSwtMTI3NjEyNDk1OCwxNz
+U3OTYyODY5LC0xNTYzNjU4MDg4LDI4MDA0MjYwMSwtMTk1ODI4
+ODQ1MSwxNTg5MjY4NjU5LDU4Mzc1MzYzNiw3ODA2MTMzNjYsMT
+QxNzYwMTc3NywxOTM3MzM2MzQ0LC0xMTQyODE1MzIxLC04OTU4
+MDA5NzJdfQ==
 -->
